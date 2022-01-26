@@ -460,6 +460,7 @@ body {
 }
 
 .logo {
+  font-size: 0.781rem;
   color: #E3B873;
   text-transform: uppercase;
 }
@@ -468,10 +469,10 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 2rem;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .nav__item:hover {
@@ -484,6 +485,7 @@ body {
 
 .contacts__phone {
   margin-right: 45px;
+  font-size: 0.87rem;
 }
 
 .hero {
@@ -553,8 +555,8 @@ body {
           justify-content: center;
   left: 0;
   bottom: 0;
-  min-width: 247px;
-  min-height: 97px;
+  min-width: 17.6rem;
+  min-height: 6.92rem;
   background-color: #131313;
   text-transform: uppercase;
   text-decoration: none;
@@ -651,11 +653,26 @@ body {
   .title {
     font-size: 1.64rem;
   }
+  .hero__scroll-down {
+    display: none;
+  }
   .hero__content {
     max-width: 22.86rem;
   }
   .hero__text {
     font-size: 1.29rem;
+    margin-bottom: 2.28rem;
+  }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+  }
+}
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
