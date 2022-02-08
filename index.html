@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
                 </nav>
                 <div class="contacts menu__contacts">
                     <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                    <button class="button contacts__button button--primary" data>Заказать звонок</button>
+                    <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
                 </div>
             </div>
             <!-- /.menu -->
@@ -41,7 +42,7 @@
         <div class="hero__content">
         <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span> </h1>
         <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-        <button class="button hero__button button--primary">Рассчитать стоимость</button>
+        <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
         <button class="button  hero__button button--outline">Отправить заявку</button>
         </div>
         <!-- /.hero__content -->
@@ -61,6 +62,39 @@
               <!-- /.section-title__image -->
           </div>
           <!-- /.section-title -->
+     <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+          <div class="swiper-slide__text">
+             <h3 class="swiper-slide__heading">Город:</h3>
+             <span class="swiper-slide__value">Ростов-на-Дону <br> ЖК Адмирал</span>
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text">
+            <h3 class="swiper-slide__heading">Площадь:</h3>
+            <span class="swiper-slide__value">81 м2</span>
+         </div>
+         <!-- /.swiper-slide__text -->
+         <div class="swiper-slide__text">
+            <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+            <span class="swiper-slide__value">3,5 месяца</span>
+         </div>
+         <!-- /.swiper-slide__text -->
+         <div class="swiper-slide__text">
+            <h3 class="swiper-slide__heading">Стоимость:</h3>
+            <span class="swiper-slide__value">По запросу</span>
+         </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>     
       </div>
       <!-- /.container -->
   </section>
@@ -292,7 +326,7 @@
   </section>
   <!-- /.section types -->
  </main>
- <div class="modal">
+ <div class="modal modal--visible">
      <div class="modal__dialog">
        <button class="modal__close"></button>  
         <h3 class="modal__title">
@@ -319,5 +353,8 @@
      <!-- /.modal__dialog -->
  </div>
  <!-- /.modal -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ <script src="js/main.js"></script>
 </body>
 </html>
