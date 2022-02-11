@@ -28,9 +28,13 @@ $(document).ready(function () {
 });
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
   
     // If we need pagination
     pagination: {
