@@ -165,114 +165,154 @@
     <!-- /.container -->
 </section>
 <!-- /.section seciton--dark projects -->
-  <section class="section types">
+<section class="section control">
     <div class="container">
-        <div class="section-title types__section-title">
-            <h2 class="section-title__heading">Виды ремонта</h2>
+        <div class="section-title control__section-title section-title--light">
+            <h2 class="section-title__heading">онлайн контроль</h2>
             <!-- /.section-title__heading -->
             <div class="section-title__image">
-                <img src="img/repair.svg" alt="video">
+                <img src="img/video.svg" alt="video">
             </div>
             <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="row">
-            <div class="col-30">
-                <div class="card types__card">
-                    <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
-                    <div class="card__text">
-                        <h3 class="card__title">Косметический ремонт</h3>
-                        <!-- /.card__title -->
-                        <ul class="card__list">
-                            <li class="card__item">Демонтаж старых покрытий</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Поклейка обоев</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Роспись стен и потолков</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Укладка полов</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена сантехники</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена розеток и выключателей</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена дверей</li>
-                            <!-- /.card__item -->
-                        </ul>
-                        <!-- /.card__list -->
-                        <strong class="card__pricetag">
-                            от 900 руб / m<sup>2</sup>
-                        </strong>
-                        <!-- /.card__pricetag -->
-                    </div>
-                    <!-- /.card__text -->
+        <div class="control__video video">
+            <img src="img/play-icon.svg" alt="play icon" class="video__play">
+        </div>  
+        <!-- /.control__video video -->
+        <p class="control__text">
+            На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.   
+        </p>
+            <form action="send.php" class="form control__form">
+                <div class="control__input-group">
+                    <label for="user-name" class="label form__label">Имя</label>
+                    <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:"> 
                 </div>
-                <!-- /.card -->
+               <div class="control__input-group">
+                    <label for="user-phone" class="label form__label">Телефон</label>
+                    <input type="text" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+               </div>
+                <button class="button button--primary control__button">Отправить
+                </button>
+                <div class="policy control__policy">
+                    <input type="checkbox" name="policy-checkbox" id="policy-checkbox"
+                        class="policy__checkbox" checked>
+                    <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                    </div>
+                    <!--/.policy-->
+            </form>  
+    </div> 
+    </section>
+    <section class="types">
+        <div class="container">
+            <div class="section-title types__section-title">
+                <h2 class="section-title__heading">Виды ремонта</h2>
+                <!-- /.section-title__heading -->
+                <div class="section-title__image">
+                    <img src="img/Repair.svg" alt="video">
+                </div>
+                <!-- /.section-title__image -->
             </div>
-            <!-- /.col -->
-            <div class="col-30">
-                <div class="card types__card">
-                    <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
-                    <div class="card__text">
-                        <h3 class="card__title">Капитальный ремонт</h3>
-                        <!-- /.card__title -->
-                        <ul class="card__list">
-                            <li class="card__item">Демонтаж старых покрытий</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Поклейка обоев</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Роспись стен и потолков</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Укладка полов</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена сантехники</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена розеток и выключателей</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена дверей</li>
-                            <!-- /.card__item -->
-                        </ul>
-                        <!-- /.card__list -->
-                        <strong class="card__pricetag">
-                            от 1800 руб / m<sup>2</sup>
-                        </strong>
-                        <!-- /.card__pricetag -->
+            <!-- /.section-title -->   
+            <div class="row">
+                <div class="col-30">
+                    <div class="card types__card">
+                        <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
+                        <div class="card__text">
+                            <h3 class="card__title">Косметический ремонт</h3>
+                            <!-- /.card__title -->
+                            <ul class="card__list">
+                                <li class="card__item">Демонтаж старых покрытий</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Поклейка обоев</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Роспись стен и потолков</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Укладка полов</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена сантехники</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена розеток и выключателей</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена дверей</li>
+                                <!-- /.card__item -->
+                            </ul>
+                            <!-- /.card__list -->
+                            <strong class="card__pricetag">
+                                от 900 руб / m<sup>2</sup>
+                            </strong>
+                            <!-- /.card__pricetag -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
-                    <!-- /.card__text -->
+                    <!-- /.card -->
                 </div>
-                <!-- /.card -->
-            </div>
-            <!-- /.col -->
-            <div class="col-30">
-                <div class="card types__card">
-                    <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
-                    <div class="card__text">
-                        <h3 class="card__title">Дизайнерский ремонт</h3>
-                        <!-- /.card__title -->
-                        <ul class="card__list">
-                            <li class="card__item">Демонтаж старых покрытий</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Поклейка обоев</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Роспись стен и потолков</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Укладка полов</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена сантехники</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена розеток и выключателей</li>
-                            <!-- /.card__item -->
-                            <li class="card__item">Замена дверей</li>
-                            <!-- /.card__item -->
-                        </ul>
-                        <strong class="card__pricetag">
-                            от 4000 руб / m<sup>2</sup>
-                        </strong>
-                        <!-- /.card__pricetag -->
+                <!-- /.col -->
+                <div class="col-30">
+                    <div class="card types__card">
+                        <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+                        <div class="card__text">
+                            <h3 class="card__title">Капитальный ремонт</h3>
+                            <!-- /.card__title -->
+                            <ul class="card__list">
+                                <li class="card__item">Демонтаж старых покрытий</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Поклейка обоев</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Роспись стен и потолков</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Укладка полов</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена сантехники</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена розеток и выключателей</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена дверей</li>
+                                <!-- /.card__item -->
+                            </ul>
+                            <!-- /.card__list -->
+                            <strong class="card__pricetag">
+                                от 1800 руб / m<sup>2</sup>
+                            </strong>
+                            <!-- /.card__pricetag -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
+                    <!-- /.card -->
                 </div>
-            </div>        
-      <!-- /.container -->
+                <!-- /.col -->
+                <div class="col-30">
+                    <div class="card types__card">
+                        <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+                        <div class="card__text">
+                            <h3 class="card__title">Дизайнерский ремонт</h3>
+                            <!-- /.card__title -->
+                            <ul class="card__list">
+                                <li class="card__item">Демонтаж старых покрытий</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Поклейка обоев</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Роспись стен и потолков</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Укладка полов</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена сантехники</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена розеток и выключателей</li>
+                                <!-- /.card__item -->
+                                <li class="card__item">Замена дверей</li>
+                                <!-- /.card__item -->
+                            </ul>
+                            <strong class="card__pricetag">
+                                от 4000 руб / m<sup>2</sup>
+                            </strong>
+                            <!-- /.card__pricetag -->
+                        </div>
+                    </div>
+                </div>     
+            </div>   
+        </div>
+    <!-- /.container -->
   </section>
   <!-- /.section types -->
   <section class="section types">
@@ -387,8 +427,10 @@
                         <!-- /.card__pricetag -->
                     </div>
                 </div>
-            </div>        
+            </div>      
+        </div>  
       <!-- /.container -->
+    </div>
   </section>
   <!-- /.section types -->
  </main>
@@ -398,7 +440,7 @@
         <h3 class="modal__title">
             Оставьте заявку и наш менеджер свяжется с вами 
         </h3>   
-        <form action="" class="form modal__form">
+        <form action="send.php" class="form modal__form">
             <label for="user-name" class="label form__label label--light">Имя</label>
             <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:"> 
             <label for="user-phone" class="label form__label label--light">Телефон</label>
