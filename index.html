@@ -437,7 +437,7 @@
  </main>
  <footer class="footer section--dark">
     <div class="container">
-       <div class="footer-wrap">
+       <div class="footer__wrap">
            <h3 class="footer__title">Остались вопросы?</h3>
         <form action="send.php" class="form footer__form">
            <div class="input-group footer__input-group">
@@ -494,12 +494,18 @@
             Оставьте заявку и наш менеджер свяжется с вами 
         </h3>   
         <form action="send.php" class="form modal__form">
-            <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:"> 
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="text" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
-            <label for="user-email" class="label form__label label--light">Email</label>
-            <input type="text" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
+            <div class="input-group modal__input-group">
+                <label for="user-name" class="label form__label label--light">Имя</label>
+                <input type="text" name="userName" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:"> 
+            </div>
+            <div class="input-group modal__input-group">
+                <label for="user-phone" class="label form__label label--light">Телефон</label>
+                <input type="tel" name="userPhone" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+            </div>
+            <div class="input-group modal__input-group">
+                <label for="user-email" class="label form__label label--light">Email</label>
+                <input type="email" name="userEmail" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
+            </div>
             <div class="policy modal__policy">
                 <input type="checkbox" name="policy-checkbox" id="policy-checkbox"
                 class="policy__checkbox" checked>
@@ -516,6 +522,8 @@
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
  <script src="js/wow.min.js"></script>
+ <script src="js/jquery.validate.min.js"></script>
+ <script src="js/jquery.mask.min.js"></script>
  <script src="js/main.js"></script>
 </body>
 </html>
